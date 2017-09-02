@@ -30,12 +30,18 @@ body.light-3{
   background-size: cover;
 }
 
-body.light-3,.light-2,.light-1,.light-0 p {
+body.light-3 p,
+body.light-2 p,
+body.light-1 p,
+body.light-0 p {
   font-family: 'Fondamento', cursive;
   font-size: 22px;
 }
 
-body.light-3,.light-2,.light-1,.light-0 span.firstLetter {
+body.light-3 span.firstLetter,
+body.light-2 span.firstLetter,
+body.light-1 span.firstLetter,
+body.light-0 span.firstLetter {
   font-size: 50px;
   background-color: gold;
   padding-left: 4px;
@@ -43,13 +49,19 @@ body.light-3,.light-2,.light-1,.light-0 span.firstLetter {
   font-family: 'UnifrakturMaguntia', cursive;
 }
 
-body.light-3,.light-2,.light-1,.light-0 span.human-speak {
+body.light-3 span.human-speak,
+body.light-2 span.human-speak,
+body.light-1 span.human-speak,
+body.light-0 span.human-speak {
   font-family: 'Princess Sofia', cursive;
   font-style: italic;
   font-weight: bold;
 }
 
-body.light-3,.light-2,.light-1,.light-0 span.goblin-speak {
+body.light-3 span.goblin-speak,
+body.light-2 span.goblin-speak,
+body.light-1 span.goblin-speak,
+body.light-0 span.goblin-speak {
   font-family: 'Griffy', cursive;
   font-style: italic;
   font-weight: bold;
@@ -64,7 +76,10 @@ body.light-0 .ending p {
 	margin-left: 38rem;
 }
 
-body.light-3,.light-2,.light-1,.light-0,.endHeading{
+body.light-3 .endHeading,
+body.light-2 .endHeading,
+body.light-1 .endHeading,
+body.light-0 .endHeading{
 	font-size: 80px;
 	margin-top: 100px;
 }

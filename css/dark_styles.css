@@ -30,12 +30,18 @@ body.dark-3{
   background-size: cover;
 }
 
-body.dark-3,.dark-2,.dark-1,.dark-0 p {
+body.dark-3 p,
+.dark-2 p,
+.dark-1 p,
+.dark-0 p {
   font-family: 'Over the Rainbow', cursive;
   font-size: 22px;
 }
 
-body.dark-3,.dark-2,.dark-1,.dark-0 span.firstLetter {
+body.dark-3 span.firstLetter,
+.dark-2 span.firstLetter,
+.dark-1 span.firstLetter,
+.dark-0 span.firstLetter {
   font-size: 50px;
   background-color: #7c6448;
   padding-left: 4px;
@@ -44,25 +50,37 @@ body.dark-3,.dark-2,.dark-1,.dark-0 span.firstLetter {
   background-color: #922c2c;
 }
 
-body.dark-3,.dark-2,.dark-1,.dark-0 span.human-speak {
+body.dark-3 span.human-speak,
+.dark-2 span.human-speak,
+.dark-1 span.human-speak,
+.dark-0 span.human-speak {
   font-family: 'Princess Sofia', cursive;
   font-style: italic;
   font-weight: bold;
 }
 
-body.dark-3,.dark-2,.dark-1,.dark-0  span.goblin-speak {
+body.dark-3  span.goblin-speak,
+.dark-2  span.goblin-speak,
+.dark-1  span.goblin-speak,
+.dark-0  span.goblin-speak {
   font-family: 'Griffy', cursive;
   font-style: italic;
   font-weight: bold;
 }
 
-body.dark-3,.dark-2,.dark-1,.dark-0 .ending p {
+body.dark-3 .ending p,
+.dark-2 .ending p,
+.dark-1 .ending p,
+.dark-0 .ending p {
 	font-size: 20px;
 	margin-right: 41rem;
 	margin-left: 38rem;
 }
 
-body.dark-3,.dark-2,.dark-1,.dark-0,.endHeading{
+body.dark-3 .endHeading,
+.dark-2 .endHeading,
+.dark-1 .endHeading,
+.dark-0 .endHeading{
 	font-size: 80px;
 	margin-top: 100px;
 }
