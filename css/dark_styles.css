@@ -1,0 +1,33 @@
+body.dark {
+  background-image: url("../images/primary/dark_Background_Border.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body.dark p {
+  font-family: 'Over the Rainbow', cursive;
+  font-size: 22px;
+}
+
+body.dark span.firstLetter {
+  font-size: 50px;
+  background-color: #7c6448;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-family: 'UnifrakturMaguntia', cursive;
+  background-color: #922c2c;
+}
+
+body.dark span.human-speak {
+  font-family: 'Princess Sofia', cursive;
+  font-style: italic;
+  font-weight: bold;
+}
+
+body.dark span.goblin-speak {
+  font-family: 'Griffy', cursive;
+  font-style: italic;
+  font-weight: bold;
+}

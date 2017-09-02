@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="css/light_styles.css" rel="stylesheet" type="text/css">
+    <link href="css/dark_styles.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fondamento|Griffy|Over+the+Rainbow|Princess+Sofia|UnifrakturMaguntia" rel="stylesheet">
+    <title>Epic Goose</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cover-page">
+        <div class="cover-bg">
+        </div>
+        <div class="row">
+          <div class="col-xs-4 col-xs-offset-4">
+            <div class="instructions cover-content">
+              <div class="page-header">
+                <h1>Epic Goose<small><br>You decide what happens</small></h1>
+              </div>
+              <h4>Instructions:</h4>
+              <p>Welcome to Epic Goose! Where you decide what happens in your story.</p>
+              <p>First, you will answer a couple brief questions about yourself and you'll see your personalized story play out in our storybook. <br>Here are a few things to know about Epic Goose:</p>
+              <ol>
+                <li>Once you choose a path, there is no going back. So choose wisely.</li>
+                <li>During your journey, you will be faced with decisions that will decide your fate within the story.</li>
+                <li>At the end of the story, you will see the consequences of your actions.</li>
+              </ol>
+              <p>If you prepared to see where your path leads within our story, "Goblin Market", continue on below:</p>
+              <button class="btn" type="button" id="begin">Begin</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4 col-xs-offset-4">
+            <div class="form-page cover-content hide">
+                <h2>Please fill out the information below:</h2>
+                <form id="userInput">
+                  <div class="form-group">
+                    <label for="name1">A name</label>
+                    <input id="name1" class="form-control" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label for="name2">Another name</label>
+                    <input id="name2" class="form-control" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label for="fruit">A type of fruit</label>
+                    <input id="fruit" class="form-control" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label for="animals">Five different animals (seperate by commas)</label>
+                    <input id="animals" class="form-control" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label for="hair">A color of hair</label>
+                    <input id="hair" class="form-control" type="text">
+                  </div>
+                  <button type="submit" class="btn">Begin your story!</button>
+                </form>
+              </div>
+          </div>
+        </div>
+        <div class="book-cover cover-content hide">
+          <h1>Goblin Market</h1>
+          <h5>Story by: Christina Rossetti</h5>
+          <!-- <img src="" alt="">  if there is time a photo-->
+          <h5>Retold by: Elrey Belmonti, Megan Olson, and L.D. MacKrell</h5>
+          <button type="button" class="btn" id="open-book">Open Book</button>
+        </div>
+      </div>
+      <div class="firstPage quill-pages hide">
+        <h5 class="photo-quote">Backwards up the mossy glen
+        Turn'd and troop'd the goblin men,
+        With their shrill repeated cry,
+        "Come buy, come buy."</h5>
+        <div class="row">
+          <div class="col-xs-4 col-xs-offset-1 story-container">
+            <p><span class="firstLetter">E</span>very evening, while walking alongside the brook, <span class="playerOne"></span> would tilt her head to better hear the strange song echoing out of the wooded glen. <span class="playerTwo"></span> would try, unsuccessfully, to hide the embarrassment that the sound always made her feel, cheeks flushing hot in the cooling evening air. The two would huddle close as the light faded, locking arms and whispering to each other to be brave. <span class="human-speak">"Stay close,"</span> said <span class="playerOne"></span>, lifting up her head to peer into the dark,<br><br>
+              <span class="human-speak">
+                "We must not look at goblin men,<br>
+                We must not buy their fruits:<br>
+                Who knows upon what soil they fed<br>
+                Their hungry thirsty roots?"<br><br>
+              </span>
+
+
+            As if in answer, the song echoed down, encircling the girls: <span class="goblin-speak">"Come buy,"</span> heralding the weird parade of creatures that hobbled towards them in the dying light.</p>
+          </div>
+          <div class="col-xs-4 col-xs-offset-2 img-container">
+            <img src="images/onions.jpg" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1 col-xs-offset-10">
+            <button type="button" class="btn col-xs-12 choice turn-page">Next</button>
+          </div>
+        </div>
+      </div>
+      <div class="secondPage quill-pages hide">
+        <div class="row">
+          <div class="col-xs-4 col-xs-offset-1 story-container">
+            <p id="page2"><span class="firstLetter">"D</span><span class="human-speak">on't look"</span> cried <span class="playerTwo"></span>. <span class="human-speak">"<span class="playerOne"></span>, we mustn't look at goblin men!"</span> taking care to cover her eyes to lest she give in to her own curiosity. <span class="playerTwo"></span> ignored <span class="playerTwo"></span>'s caution and, in an excited whisper, described to her companion each odd and fantastic creature as it came into view. They were men, of a sort; most were quite small and had animal features rarely seen in those who walked on two legs. Some had tails and others pointed noses, some were plumed in feathers, others covered in quills. In their paws and hands, they carried baskets and shiny plates weighed down with brightly colored and unfamiliar fruit.<br>
+            <span class="decide">What do you do:<br> <br>
+            Path Left: Run <br>
+            Path Right: Stay <br><br></span>
+          </div>
+          <div class="col-xs-4 col-xs-offset-2 img-container">
+            <img src="images/primary/hearNotHear.jpg" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1 col-xs-offset-7">
+            <button type="button" class="btn col-xs-12 choice left2">Left</button>
+          </div>
+          <div class="col-xs-1 col-xs-offset-2">
+            <button type="button" class="btn col-xs-12 choice right2">Right</button>
+          </div>
+        </div>
+      </div>
+      <div class="thirdPage quill-pages hide">
+        <h5 class="photo-quote">Their offers should not charm us,
+        Their evil gifts would harm us.</h5>
+        <div class="row">
+          <div class="col-xs-4 col-xs-offset-1 story-container ">
+            <p id="page3"><span class="firstLetter">H</span>orrified, <span class="playerTwo"></span> broke and, sticking her fingers in her ears, closed her eyes and ran.<span class="playerOne"></span> too curious to heed the fear of <span class="playerTwo"></span>, stretched up onto her toes to better see the troop of merchantmen.<br><br>
+            One had a <span class="animalInput1">'s</span> face, <br>
+            One <span class="animalInput0"></span> whisked a tail, <br>
+            One tramp'd at a <span class="animalInput2"></span>'s pace, <br>
+            One crawl'd like a snail, <br>
+            One like a <span class="animalInput3"></span> prowl'd obtuse and furry, <br>
+            One like a <span class="animalInput4"></span> tumbled hurry skurry. <br><br>
+            The noisy assemblage slowed to a stop before <span class="playerOne"></span>, throwing glances between themselves and smiling at unknown brotherly pranks. As one, they revealed their wares, placing their baskets on the green moss and hoisting heavy golden plates dripping with brightly colored fruits. Cajoling, each offered <span class="playerOne"></span> their wares. <br>
+            <span class="decide">Path for <span class="playerOne"></span>:<br><br>
+            Path left: Speak to the Goblins <br><br>
+            Path Right: Stay Silent <br><br></span></p>
+          </div>
+          <div class="col-xs-4 col-xs-offset-2 img-container">
+            <img src="images/primary/parade.png" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1 col-xs-offset-7">
+            <button type="button" class="btn col-xs-12 choice left3">Left</button>
+          </div>
+          <div class="col-xs-1 col-xs-offset-2">
+            <button type="button" class="btn col-xs-12 choice right3">Right</button>
+          </div>
+        </div>
+      </div>
+      <div class="fourthPage quill-pages hide">
+        <h5 class="photo-quote">Clearer than water flow'd that juice;
+        She never tasted such before,</h5>
+        <div class="row">
+          <div class="col-xs-4 col-xs-offset-1 story-container">
+            <p id="page4"><span class="firstLetter">P</span>olitely, <span class="playerOne"></span> explained that she did not have any money and would not be able to purchase any of the beautiful fruit. With the luck of the sweet-toothed, the goblins suggested a different price:<br><br>
+            <span class="goblin-speak">"You have much wealth upon your head,<br>
+            Buy from us with a <span class="hairInput"></span> curl."</span><br><br>
+            She clipped a lock and paid in full, after which she, shyly at first, accepted a beautiful <span class="fruitInput"></span>. Before long, she was gorging herself on fruit globes beyond description. They were unlike anything she'd ever tasted, fruits from that unknown orchard were sweeter than honey and stronger than any wine. <span class="playerOne"></span> ate until her lips were sore and face sticky from the juices, never feeling the slightest sickness despite the sheer amount she consumed.<br><br>
+            Finally, not knowing if it was day or night, <span class="playerOne"></span> tossed aside the empty rinds and, on an impulse, gathered up one of the seed kernels before turning for home.</p>
+          </div>
+          <div class="col-xs-4 col-xs-offset-2 img-container">
+            <img src="images/primary/BigBanner.jpg" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1 col-xs-offset-10">
+            <button type="button" class="btn col-xs-12 choice turn-page2">Next</button>
+          </div>
+        </div>
+      </div>
+      <div class="fifthPage quill-pages hide">
+        <div class="row">
+          <div class="col-xs-4 col-xs-offset-1 story-container">
+            <p id="page5"><span class="firstLetter">T</span>he sisters met at the gate, concern making <span class="playerTwo"></span>'s words harsh. "Where have you been? It's much to late for anyone to be in the woods alone." <span class="playerTwo"></span> reminded <span class="playerOne"></span> of the neighbor, Jeanie, who had dallied with the goblin men one day. Engaged to be married, she died a maid obsessed with finding the goblin men ever after.<br><br>
+            <span class="goblin-speak">"Sought them by night and day,<br>
+            Found them no more, but dwindled and grew grey;<br>
+            Then fell with the first snow,<br>
+            While to this day no grass will grow <br>
+            Where she lies low:"</span><br><br>
+            <span class="human-speak">"Nevermind that,"</span> said <span class="playerOne"></span>,<span class="human-speak"> "<span class="playerTwo"></span>, you will not believe what I have seen!"</span> <span class="playerOne"></span> told <span class="playerTwo"></span> of the lovely fruit she had eaten. Even now, in the retelling, <span class="playerOne"></span> hungered for the fruit which only just now left <span class="playerOne"></span> feeling uncomfortably full. Pitying <span class="playerTwo"></span> for missing the rare treat,<span class="playerOne"></span> promised to go the next day and bring back some of the fruit to share.</p>
+          </div>
+          <div class="col-xs-4 col-xs-offset-2 img-container">
+            <img src="images/primary/carriedOff.jpg" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1 col-xs-offset-10">
+            <button type="button" class="btn col-xs-12 choice turn-page3">Next</button>
+          </div>
+        </div>
+      </div>
+      <div class="sixthPage quill-pages hide">
+        <div class="row">
+          <div class="col-xs-4 col-xs-offset-1 story-container">
+            <p id="page6"><span class="firstLetter">R</span>ising early the next morning, <span class="playerOne"></span> and <span class="playerTwo"></span> set to their daily chores. <span class="playerTwo"></span> was bright and cheerful in her work, but <span class="playerOne"></span> was distracted, worn, and longing for nightfall. Finally, the day began to wind down just as the two went to fetch water from the reedy brook. The sunset threw shadows on the distant mountain crags, signaling the time for return to home and safety, but <span class="playerOne"></span> loitered and delayed. She was looking for some hint of the customary herd of figures to come racing, whisking, tumbling, hobbling out of the glen, but not a single paw or whisker was to be seen. <br><br>
+            Anxious, <span class="playerTwo"></span> urged:<br>
+           <span class="human-speak">"O <span class="playerOne"></span>, come; <br>
+            I hear the fruit-call but dare not look:<br>
+            You should not loiter longer at this brook:<br>
+            Come with me home."</span><br><br>
+            <span class="playerOne"></span> felt cold fall over her as she realized that <span class="playerTwo"></span> alone could hear the goblin cry, <span class="goblin-speak">"Come by our fruits, come buy."</span> Never again would she taste the marvelous fruit and her heart seemed to creak with longing like old wood.</p>
+          </div>
+          <div class="col-xs-4 col-xs-offset-2 img-container">
+            <img src="images/primary/pining.jpg" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1 col-xs-offset-10">
+            <button type="button" class="btn col-xs-12 choice turn-page4">Next</button>
+          </div>
+        </div>
+      </div>
+      <div class="seventhPage quill-pages hide">
+        <h5 class="photo-quote">She never caught again the goblin cry: "Come buy, come buy;" -- She never spied the goblin men/ Hawking their fruits along the glen</h5>
+        <div class="row">
+          <div class="col-xs-4 col-xs-offset-1 story-container">
+            <p id="page7"><span class="firstLetter">H</span>ome again, <span class="playerOne"></span> crawled to bed, but sleep would not come. Long after <span class="playerTwo"></span> had fallen into rest, <span class="playerOne"></span> lay awake, tortured with hunger and gnashing her teeth at the memory of need unfulfilled. Each night, <span class="playerTwo"></span> traded sleep for tears and every minute would listen for the call that would never come. <br><br>
+            One day, <span class="playerOne"></span> recalled the <span class="fruitInput"></span> kernel-stone, secreted in her pocket following that feverish feast. In desperation, she placed it in a little pot and watered it with her ever-flowing tears.<br><br>
+            "She dream'd of melons, as a traveller sees <br>
+            False waves in desert drouth <br>
+            With shade of leaf-crown'd trees, <br>
+            And burns the thirstier in the sandful breeze."<br><br>
+            No longer would <span class="playerOne"></span> tend to her chores or eat, her <span class="hairInput"></span> locks seemed to grey, and her days passed sitting listlessly in the chimney-nook.</p>
+          </div>
+          <div class="col-xs-4 col-xs-offset-2 img-container">
+            <img src="images/primary/longing.png" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1 col-xs-offset-10">
+            <button type="button" class="btn col-xs-12 choice turn-page5">Next</button>
+          </div>
+        </div>
+      </div>
+      <div class="eigthPage quill-pages hide">
+        <h5 class="photo-quote">At twilight, halted by the brook: And for the first time in her life Began to listen and look.</h5>
+        <div class="row">
+          <div class="col-xs-4 col-xs-offset-1 story-container">
+            <p id="page8"><span class="firstLetter">H</span>eart aching for her sister, <span class="playerTwo">'s</span> distress further increased by the now morning and night cry of the goblins' <span class="goblin-speak">"Come buy our orchard fruits, Come buy, come buy."</span> Finally, the day came when <span class="playerOne"></span> seemed to be leaving this world and <span class="playerTwo"></span> had to act. Pocketing her silver penny, she kissed <span class="playerOne"></span> and set out at twilight to find the market.<br> <br>
+            "Laugh'd every goblin <br>
+            When they spied her peeping:<br>
+            Came towards her hobbling,<br>
+            Flying, running, leaping"<br> <br>
+            The <span class="animalInput0"></span>-faced and <span class="animalInput1"></span>-faced, <span class="animalInput2"></span>- and <span class="animalInput3"></span>-like, snail-paced in a hurry, and the <span class="animalInput4"></span>-voiced surrounded her, stretching up panniers and plates of jewel-like fruits and <span class="fruitInput"></span> unearthly delights.</p>
+          </div>
+          <div class="col-xs-4 col-xs-offset-2 img-container">
+            <img src="images/primary/woods.jpg" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1 col-xs-offset-10">
+            <button type="button" class="btn col-xs-12 choice turn-page6">Next</button>
+          </div>
+        </div>
+      </div>
+      <div class="ninthPage quill-pages hide">
+        <h5 class="photo-quote">Nay, take a seat with us, Honour and eat with us</h5>
+        <div class="row">
+          <div class="col-xs-4 col-xs-offset-1 story-container">
+            <p id="page9"><span class="firstLetter">"G</span><span class="human-speak">ood folk,"</span> said <span class="playerTwo"></span>. Tossing them her silver penny, held out her apron and bid them <span class="human-speak">"Give me much and many, all that my penny will buy."</span> Unlike merchants of the human sort, the goblins did not seem keen to accept <span class="playerTwo"></span>'s proposed exchange. Instead, they bade her to sit and eat with them as their honored guest. After all, their wondrous fruits were ripe only fleetingly and would rapidly spoil if not presently enjoyed.<br><br>
+            <span class="decide">Path for <span class="playerTwo"></span>:<br>
+            Left Path: Buy the Fruit <br>
+            Right Path: Eat the Fruit</span></p>
+          </div>
+          <div class="col-xs-4 col-xs-offset-2 img-container">
+            <img src="images/primary/blueDress.jpg" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1 col-xs-offset-7">
+            <button type="button" class="btn col-xs-12 choice left9">Left</button>
+          </div>
+          <div class="col-xs-1 col-xs-offset-2">
+            <button type="button" class="btn col-xs-12 choice right9">Right</button>
+          </div>
+        </div>
+      </div>
+      <div class="tenPage quill-pages hide">
+        <h5 class="photo-quote">Twitch'd her hair out by the roots, Stamp'd upon her tender feet, Held her hands and squeez'd their fruits Against her mouth to make her eat.</h5>
+        <div class="row">
+          <div class="col-xs-4 col-xs-offset-1 story-container ">
+            <p id="page10"><span class="firstLetter">"T"</span><span class="human-speak">hank you,"</span> said <span class="playerTwo"></span> <span class="humna-speak">"But one waits at home alone for me... If you will not sell me any of your fruits, then give me back my silver penny."</span> The once magnanimous smiles and cajoling voices turned hard and sharp, calling her <span class="goblin-speak">'proud'</span> and <span class="goblin-speak">'uncivil'</span>. Wagging tails and purring transformed into tail lashing and snarls as they began to jostle and crowd her. Claws raked at her and tore her gown, small paws pinching her black as ink, as the horde attempted to force upon her that which they previously tried to beguile.<br><br>
+            Having expected no less, <span class="playerTwo"></span>
+            utter'd not a word;<br>
+            Would not open lip from lip<br>
+            lest they should cram a mouthful in:<br>
+            But laugh'd in heart to feel the drip<br>
+            Of juice that syrrup'd all her face,<br><br>
+            The torment went on and on, until the cock crowed his morning warning and, exhausted by her resistance, the goblins flung back her penny and dispersed. Some sank into the ground like worms, some dived into the brook, others flew away on the gale and the last disappeared into the distance.</p>
+          </div>
+          <div class="col-xs-4 col-xs-offset-2 img-container">
+            <img src="images/primary/cover.jpg" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1 col-xs-offset-10">
+            <button type="button" class="btn col-xs-12 choice turn-page7">Next</button>
+          </div>
+        </div>
+      </div>
+      <div class="elevenPage quill-pages hide">
+        <h5 class="photo-quote">For your sake I have braved the glen And had to do with with goblin merchant men.</h5>
+        <div class="row">
+          <div class="col-xs-4 col-xs-offset-1 story-container ">
+            <p id="page11"><span class="firstLetter">A</span>ching, limbs stinging, and skin tingling, <span class="playerTwo"></span> snatched up her penny and tore through the forest back to <span class="playerOne">.</span>  Her heart was so light with joy and hope, as she flew home she laughed inside. "<span class="playerOne">!"</span> she cried as she ran up the garden. Calling for her sister to come and kiss her fruit stained cheek:<br><br>
+            Squeez'd from goblin fruits for you,<br>
+            Goblin pulp and goblin dew.<br><br>
+            Horrified, <span class="playerOne"></span>, startled up from her chair and in fear that <span class="playerTwo"></span> had doomed herself for the sake of her sister, tore at her greying curls. Crying once again, <span class="playerOne"></span> kissed <span class="playerTwo">'s</span> cheeks repeatedly, until her lips began to scorch. The second taste of the fruit was a wormwood feast, and a fire flew through her blood as life returned to <span class="playerOne"></span>. Light danced back into her eyes, the grey fled from her <span class="hairInput"></span> locks, and innocent laughter returned to her voice.</p>
+          </div>
+          <div class="col-xs-4 col-xs-offset-2 img-container">
+            <img src="images/primary/happyEnding.jpg" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1 col-xs-offset-10">
+            <button type="button" class="btn col-xs-12 choice turn-page8">Next</button>
+          </div>
+        </div>
+      </div>
+      <div class="twelvePage quill-pages hide">
+        <h5 class="photo-quote">For there is no friend like a sister To fetch one if one goes astray, To lift one if one totters down, To strengthen whilst one stands.</h5>
+        <div class="row">
+          <div class="col-xs-4 col-xs-offset-1 story-container ">
+            <p id="page12"><span class="firstLetter">L</span>ong years later, when both had children of their own, they would tell the story of the dangers of the woods and how a sister would stand fast in deadly peril to save the other. One cannot prevent the temptations in life, you can't keep the goblins from crying <span class="goblin-speak">"Come Buy, come buy,"</span> but neither must you heed it. And, if your desire to know, to see, to taste overwhelms you, hopefully you'll have a clever sister nearby.</p>
+          </div>
+          <div class="col-xs-4 col-xs-offset-2 img-container">
+            <img src="images/primary/sisters.jpg" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1 col-xs-offset-10">
+            <button type="button" class="btn col-xs-12 choice endHappy">Next</button>
+          </div>
+        </div>
+      </div>
+      <div class="thirteenPage quill-pages hide">
+        <h5 class="photo-quote">Took their gifts both choice and many,
+        Ate their fruits and wore their flowers Pluck’d from bowers Where summer ripens at all hours?</h5>
+        <div class="row">
+          <div class="col-xs-4 col-xs-offset-1 story-container ">
+            <p id="page13"><span class="firstLetter">H</span>orrified, <span class="playerTwo"></span> broke and, sticking her fingers in her ears, closed her eyes and ran.<span class="playerOne"></span> too curious to heed the fear of <span class="playerTwo"></span>, stretched up onto her toes to better see the troop of merchantmen.<br><br>
+            One had a <span class="animalInput0">'s</span> face, <br>
+            One <span class="animalInput1"></span>whisked a tail, <br>
+            One tramp'd at a <span class="animalInput2"></span>'s pace, <br>
+            One crawl'd like a snail, <br>
+            One like a <span class="animalInput3"></span> prowl'd obtuse and furry, <br>
+            One like a <span class="animalInput4"></span> tumbled hurry skurry. <br><br>
+            The noisy assemblage slowed to a stop before <span class="playerOne"></span>, throwing glances between themselves and smiling at unknown brotherly pranks. As a one, they revealed their wares, placing their baskets on the green moss or hoisting heavy golden plates. Cajoling, each offered <span class="playerOne"></span> their wares.</p>
+          </div>
+          <div class="col-xs-4 col-xs-offset-2 img-container">
+            <img src="images/primary/parade.png" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1 col-xs-offset-10">
+            <button type="button" class="btn col-xs-12 choice endSad">Next</button>
+          </div>
+        </div>
+      </div>
+      <div class="fourteenPage quill-pages hide">
+        <h5 class="photo-quote">Folks talked about the haunted glen, The wicked, quaint fruit-merchant men, Their fruits like honey to the throat But poison in the blood</h5>
+        <div class="row">
+          <div class="col-xs-4 col-xs-offset-1 story-container ">
+            <p id="page14"><span class="firstLetter">F</span>oggy headed and empty handed, <span class="playerTwo"></span> turned homeward. Steps heavy with shame and dread she made the long slow walk out of the glen and up the garden path. Seeing her, <span class="playerOne"></span> climbed from her chair, and clutching her wan face with thin hands, called:<br><br>
+            <span class=“human-speak”>“<span class="playerTwo"></span>, <span class="playerTwo"></span>, have you tasted
+            For my sake the fruit forbidden?
+            Must your light like mine be hidden,
+            Your young life like mine be wasted,
+            Undone in mine undoing,
+            And ruin’d in my ruin,
+            Thirsty, canker’d, goblin-ridden?”—</span><br><br>
+            Upon reaching her, <span class="playerTwo"></span> collapsed in her arms, following her sister into tears just as, weeks later, she followed her into the grave. Both were buried at the edge of the woods where, years later a <span class="fruitInput"></span> grew. Those who remember the tale of the two sisters say the fruit is cursed and all shun the eating of it.</p>
+          </div>
+          <div class="col-xs-4 col-xs-offset-2 img-container">
+            <img src="images/primary/parade.png" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1 col-xs-offset-10">
+            <button type="button" class="btn col-xs-12 choice endSad">Next</button>
+          </div>
+        </div>
+      </div>
+      <div class="fifteenPage quill-pages hide">
+        <h5 class="photo-quote">Took their gifts both choice and many, Ate their fruits and wore their flowers Pluck’d from bowers Where summer ripens at all hours</h5>
+        <div class="row">
+          <div class="col-xs-4 col-xs-offset-1 story-container ">
+            <p id="page15"><span class="firstLetter">C</span>lutching her empty apron between her sticky fruit-stained hands, <span class="playerTwo"></span> fought back a wave of despair. She had failed to obtain the fruit that would free <span class="playerOne"></span> from the curse that beset her. Unable to return home bereft of that last hope, <span class="playerTwo"></span>did not know what to do or where to go. Again, the night breeze carried the cry <span class=“goblin-speak>”Come buy, come buy”</span> and, turning slowly on her heel, <span class="playerTwo"></span> followed it into the dark forest.</p>
+          </div>
+          <div class="col-xs-4 col-xs-offset-2 img-container">
+            <img src="images/primary/parade.png" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1 col-xs-offset-10">
+            <button type="button" class="btn col-xs-12 choice endSad">Next</button>
+          </div>
+        </div>
+      </div>
+      <div class="thirtyPage quill-pages hide">
+        <h5 class="photo-quote">Their offers should not charm us,
+        Their evil gifts would harm us.</h5>
+        <div class="row">
+          <div class="col-xs-4 col-xs-offset-1 story-container ">
+            <p id="page30"><span class="firstLetter">F</span>rightened almost past bearing, but loathe to leave her less stalwart sister, <span class="playerOne"></span>, in the path of the eerie procession, <span class="playerTwo"></span> marshaled her fear. Tightly entwining her fingers with those of <span class="playerOne">'s</span> she dropped her eyes to the mossy path and half-walked, half-dragged them both toward the safe harbor of home. Curious, but unwilling to vex her sister, <span class="playerTwo"></span>, allowed herself to be stolen away, but not without much craning of her neck to spy the assembled crew. <span class="playerTwo"></span>, resolutely pledged that she would take care to turn home from fetching water at an earlier hour in days to come.</p>
+          </div>
+          <div class="col-xs-4 col-xs-offset-2 img-container">
+            <img src="images/primary/walk.jpg" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1 col-xs-offset-10">
+            <button type="button" class="btn col-xs-12 choice loop">Next</button>
+          </div>
+        </div>
+      </div>
+      <div class="thirtyOnePage quill-pages hide">
+        <h5 class="photo-quote"><span class="playerOne"></span> stared but did not stir, Long’d but had no money: The whisk-tail’d merchant bade her taste In tones as smooth as honey,</h5>
+        <div class="row">
+          <div class="col-xs-4 col-xs-offset-1 story-container ">
+            <p id="page31"><span class="firstLetter">W</span>hether her shyness grew from her lack of money, or was awe of the strange coterie who addressed her, <span class="playerOne"></span> did not reply. Smiling politely with eyes cast to the edge of the moss at her feet she gave a brief shake of her head. Denying their pretty words and obsequious manners, <span class="playerOne"></span> would not look raise her head nor speak. Rebuffed, the merchantmen hoisted up their baskets and plates and<br><br>
+            Backwards up the mossy glen<br>
+            Turn'd and troop'd the goblin men,<br>
+            With their shrill repeated cry,<br>
+            <span class="goblin-speak">"Come buy, come buy."</span><br><br>
+            As they filed away into the deep forest, the last of their number, a small, <span class="animalInput0"></span>-faced goblin, scrabbled upon the uneven bank. One perfect <span class="fruitInput"></span> escaped from the basket balanced on his head and rolled down the hill where it came to a stop at <span class="playerOne">'s'</span> foot. <br>
+            <span class="decide">Path for <span class="playerOne"></span>:<br><br>
+            Path left: Give Sister Fruit <br><br>
+            Path Right: Eat the Fruit <br><br></span></p>
+          </div>
+          <div class="col-xs-4 col-xs-offset-2 img-container">
+            <img src="images/primary/girlColor.jpg" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1 col-xs-offset-7">
+            <button type="button" class="btn col-xs-12 choice left31">Left</button>
+          </div>
+          <div class="col-xs-1 col-xs-offset-2">
+            <button type="button" class="btn col-xs-12 choice right31">Right</button>
+          </div>
+        </div>
+      </div>
+      <div class="thirtyTwoPage quill-pages hide">
+        <h5 class="photo-quote">How fair the vine must grow Whose fruitInput are so luscious; How warm the wind must blow Through those fruit bushes.</h5>
+        <div class="row">
+          <div class="col-xs-4 col-xs-offset-1 story-container ">
+            <p id="page32"><span class="firstLetter">T</span>he goblin's song was still echoing in her ears as <span class="playerOne"></span> snatched up the <span class="fruitInput"></span> and ran homewards. She reached the end of the woods where her home, lit by lantern and candle, was visible in the deepening twilight. <span class="playerOne"></span> pulled out the fruit and ate it. It was beyond description, this fruit from an unknown orchard;  sweeter than honey in the rock and stronger than any wine brewed by man. She savored each bite and then sucked the juices from her fingers. Pocketing the kernel-stone, she brushed back her hair and walked up the garden path to where her sister, <span class="playerTwo"></span> awaited her at the gate.<br>
+            <span class="decide">Path for <span class="playerOne"></span>:<br><br>
+            Path left: Go home <br><br>
+            Path Right: Go away with the Goblins <br><br></span></p>
+          </div>
+          <div class="col-xs-4 col-xs-offset-2 img-container">
+            <img src="images/appleBite.jpg" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1 col-xs-offset-7">
+            <button type="button" class="btn col-xs-12 choice left32">Left</button>
+          </div>
+          <div class="col-xs-1 col-xs-offset-2">
+            <button type="button" class="btn col-xs-12 choice right32">Right</button>
+          </div>
+        </div>
+      </div>
+      <div class="thirtyThreePage quill-pages hide">
+        <h5 class="photo-quote">To-morrow night I will Buy more;” and kiss’d her: “Have done with sorrow; I’ll bring you plums to-morrow"</h5>
+        <div class="row">
+          <div class="col-xs-4 col-xs-offset-1 story-container ">
+            <p id="page33"><span class="firstLetter">R</span>eturning home through the woods, <span class="playerOne"></span> met her sister at the garden gate, concern making <span class="playerTwo">'s'</span> voice harsh. <span class="human-speak">"Where have you been? It's much to late for anyone to be in the woods alone."<br>
+            "Nevermind that,"</span> said <span class="playerOne"></span>,<span class="human-speak">"<span class="playerTwo">,</span> you will not believe what I have seen!"</span> She told her sister of of the weirdling men and the lovely fruit she had seen. Pitying <span class="playerTwo"></span> for missing the rare treat, <span class="playerOne"></span> offered her the <span class="fruitInput"></span> that had rolled from the goblin merchant's pack. She felt magnanimous in gifting the <span class="fruitInput"></span> to <span class="playerTwo"></span> promising that she would visit the goblin market the next day and bring back more of the fruit to share.</p>
+          </div>
+          <div class="col-xs-4 col-xs-offset-2 img-container">
+            <img src="images/primary/longing.png" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1 col-xs-offset-10">
+            <button type="button" class="btn col-xs-12 choice turn-page9">Next</button>
+          </div>
+        </div>
+      </div>
+      <div class="thirtyFourPage quill-pages hide">
+        <h5 class="photo-quote"> <span class="playerOne"></span> talked about the haunted glen, The wicked, quaint fruit-merchant men, Their fruits like honey to the throat But poison in the blood.</h5>
+        <div class="row">
+          <div class="col-xs-4 col-xs-offset-1 story-container ">
+            <p id="page34"><span class="firstLetter">D</span>riven by her desire to help her sister, <span class="playerTwo"></span> was afraid to refuse the hospitality of the merchantmen. Reluctance easily mistaken for shyness, she settled carefully onto the soft moss, smoothing her empty apron over her lap. The goblins surrounded her, offering their multitude of wares.<br><br>
+            Chattering like <span class="animalInput1"></span>,
+            Fluttering like <span class="animalInput3"></span>,
+            Gliding like <span class="animalInput2"></span>,—
+            ...
+            Stretch’d up their dishes,
+            Panniers, and plates <br><br>
+            She accepted a <span class="fruitInput"></span> and, like a swimmer plunges into a chilly lake, bit into the sweet flesh lest she change her mind. That bite led to a second and on and on as her hosts placed their strange harvest before her. Gone were her thoughts of home and <span class="PlayerOne"></span>, gone was her sense of day and night, stolen away along with her plan to hide a <span class="fruitInput"></span> in the folds of her apron. Hands sticky and mouth aching, thought and memory slowly returned and <span class="playerTwo"></span> realized she was alone. Her companions were not long departed as she could hear their song in the woods before her.<br>
+            <span class="decide">Path for <span class="playerOne"></span>:<br><br>
+            Path left: Return Home <br><br>
+            Path Right: Stay with the Goblins <br><br></span></p>
+          </div>
+          <div class="col-xs-4 col-xs-offset-2 img-container">
+            <img src="images/primary/parade.png" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1 col-xs-offset-7">
+            <button type="button" class="btn col-xs-12 choice left34">Left</button>
+          </div>
+          <div class="col-xs-1 col-xs-offset-2">
+            <button type="button" class="btn col-xs-12 choice right34">Right</button>
+          </div>
+        </div>
+      </div>
+      <div class="thirtyFivePage quill-pages hide">
+        <h5 class="photo-quote">Sought them by night and day, Found them no more, but dwindled and grew grey; While to this day no grass will grow Where she lies low</h5>
+        <div class="row">
+          <div class="col-xs-4 col-xs-offset-1 story-container ">
+            <p id="page35"><span class="firstLetter">U</span>uanware of from where the <span class="inputFruit"></span> came, and unwilling to refuse the gift of a beloved sister, <span class="playerTwo"></span> ate the <span class="fruitInput"></span>. The fruit was unparalleled in sweetness, unlike anything <span class="playerTwo"></span> had ever eaten.<br><br>
+            She never tasted such before,<br>
+            ...She suck’d and suck’d and suck’d the more<br>
+            Fruits which that unknown orchard bore;<br>
+            She suck’d until her lips were sore;<br><br>
+            Over the course of several days,  <span class="playerTwo"></span>, became listless, no longer taking joy in simple work. Her eyes dulled, her hair greyed, and food no longer held any interest. As <span class="playerOne"></span> watched, her sister faded in front of her. Fretting that the cause was none other than her gift of the goblins' <span class="fruitInput"></span>, she returned each night to the glen at twilight, straining to hear the goblin's cry, <span class="goblin-speak">"Come buy, come buy!"</span> but it never came.<br><br>
+            As the first snow fell, so did <span class="playerTwo"></span>, leaving her sister, <span class="playerOne"></span> bereft. On the twilight of day after her sister's death, <span class="playerOne"></span> wept by the brook where, over the rattle of her sobs, she one again caught the familiar tune. Faintly, she could hear the market-call blowing on the new winter breeze: <span class="goblin-speak">"Come buy, come buy..."</span></p>
+          </div>
+          <div class="col-xs-4 col-xs-offset-2 img-container">
+            <img src="images/primary/deadGirl.jpg" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1 col-xs-offset-10">
+            <button type="button" class="btn col-xs-12 choice endSad">Next</button>
+          </div>
+        </div>
+      </div>
+      <div class="ending cover-page hide">
+        <div class="cover-bg cover-bg-reverse">
+        </div>
+        <br><br><br><br>
+          <h1 class="sad hide">Tragic</h1><br><br>
+          <p class="sad hide">Your choices have led to a tragic end, whether due to your own curiosity or that of another. While it may have brought you here, you are among the small society who have had a glimpse into the secreted world of the Goblin Market. Few others have tasted their wares. Sometimes the desire for knowledge, to see and experience the world around us, can be harshly rewarded, but no one can say that yours is a life un-lived.</p>
+          <h1 class="happy hide">Joyful</h1><br><br>
+          <p class="happy hide">You made it through the Goblin Market! It wasn't easy and sometimes the circumstances took you down a dark path, but you strove to find the light: protecting your loved ones and resisting the temptation of Goblin Fruit. Take care that your devotion to steady and safe doesn't keep you from entering the woods in the first place. After all, one needs the dark to appreciate the light.</p>
+        <p class="bittersweet hide">Bittersweet</p>
+        <button type="button" class="btn reset">Read Again</button>
+      </div>
+    </div>
+  </body>
+</html>
