@@ -73,7 +73,7 @@ setMoral(moralCount);
     $(".turn-page").click(function(){
       moralCount = parseInt($(this).attr("moral"));
       setMoral(moralCount);
-      // setMood("light");
+
      $(".firstPage").addClass("hide");
      $(".secondPage").removeClass("hide");
     });
@@ -81,7 +81,7 @@ setMoral(moralCount);
     $(".left2").click(function() {
       moralCount = parseInt($(this).attr("moral"));
       setMoral(moralCount);
-      // setMood("dark");
+
       $(".secondPage").addClass("hide");
       $(".thirdPage").removeClass("hide");
     });
@@ -89,7 +89,7 @@ setMoral(moralCount);
     $(".right2").click(function() {
       moralCount = parseInt($(this).attr("moral"));
       setMoral(moralCount);
-      // setMood("light");
+
       $(".secondPage").addClass("hide");
       $(".thirtyPage").removeClass("hide");
     });
@@ -97,7 +97,7 @@ setMoral(moralCount);
     $(".left3").click(function(){
       moralCount = parseInt($(this).attr("moral"));
       setMoral(moralCount);
-      // setMood("dark");
+
       $(".thirdPage").addClass("hide");
       $(".fourthPage").removeClass("hide");
     });
@@ -105,7 +105,7 @@ setMoral(moralCount);
     $(".right3").click(function(){
       moralCount = parseInt($(this).attr("moral"));
       setMoral(moralCount);
-      // setMood("light");
+
       $(".thirdPage").addClass("hide");
       $(".thirtyOnePage").removeClass("hide");
     });
@@ -125,7 +125,8 @@ setMoral(moralCount);
     });
 
     $(".turn-page4").click(function(){
-      setMood("light")
+      moralCount = parseInt($(this).attr("moral"));
+      setMoral(moralCount);
       $(".sixthPage").addClass("hide");
       $(".seventhPage").removeClass("hide");
     });
@@ -161,7 +162,7 @@ setMoral(moralCount);
     $(".left9").click(function(){
       moralCount = parseInt($(this).attr("moral"));
       setMoral(moralCount);
-      // setMood("light");
+
       $(".ninthPage").addClass("hide");
       $(".tenPage").removeClass("hide");
     });
@@ -169,7 +170,7 @@ setMoral(moralCount);
     $(".right9").click(function(){
       moralCount = parseInt($(this).attr("moral"));
       setMoral(moralCount);
-      // setMood("dark");
+      
       $(".ninthPage").addClass("hide");
       $(".thirtyFourPage").removeClass("hide");
     });
@@ -177,7 +178,7 @@ setMoral(moralCount);
     $(".left31").click(function(){
       moralCount = parseInt($(this).attr("moral"));
       setMoral(moralCount);
-      // setMood("light");
+
       $(".thirtyOnePage").addClass("hide");
       $(".thirtyThreePage").removeClass("hide");
     });
@@ -185,7 +186,7 @@ setMoral(moralCount);
     $(".right31").click(function(){
       moralCount = parseInt($(this).attr("moral"));
       setMoral(moralCount);
-      // setMood("dark");
+
       $(".thirtyOnePage").addClass("hide");
       $(".thirtyTwoPage").removeClass("hide");
     });
@@ -193,7 +194,7 @@ setMoral(moralCount);
     $(".left32").click(function(){
       moralCount = parseInt($(this).attr("moral"));
       setMoral(moralCount);
-      // setMood("light");
+
       $(".thirtyTwoPage").addClass("hide");
       $(".fifthPage").removeClass("hide");
     });
@@ -201,13 +202,14 @@ setMoral(moralCount);
     $(".right32").click(function(){
       moralCount = parseInt($(this).attr("moral"));
       setMoral(moralCount);
-      // setMood("dark");
+
       $(".thirtyTwoPage").addClass("hide");
       $(".thirteenPage").removeClass("hide");
     });
 
     $(".turn-page9").click(function(){
-      setMood("dark");
+      moralCount = parseInt($(this).attr("moral"));
+      setMoral(moralCount);
       $(".thirtyThreePage").addClass("hide");
       $(".thirtyFivePage").removeClass("hide");
     });
@@ -215,7 +217,7 @@ setMoral(moralCount);
     $(".left34").click(function(){
       moralCount = parseInt($(this).attr("moral"));
       setMoral(moralCount);
-      // setMood("light");
+
       $(".thirtyFourPage").addClass("hide");
       $(".fourteenPage").removeClass("hide");
     });
@@ -223,7 +225,7 @@ setMoral(moralCount);
     $(".right34").click(function(){
       moralCount = parseInt($(this).attr("moral"));
       setMoral(moralCount);
-      // setMood("dark");
+
       $(".thirtyFourPage").addClass("hide");
       $(".fifteenPage").removeClass("hide");
     });

@@ -6,7 +6,15 @@ body.dark-0 {
   background-size: cover;
 }
 
-body.dark-1 {
+body.light-1{
+  background-image: url("../images/bg/dark-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body.light-2{
   background-image: url("../images/bg/dark_Background_Border.jpg");
   background-repeat: no-repeat;
   background-position: center;
