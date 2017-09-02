@@ -6,7 +6,7 @@ body.dark-0 {
   background-size: cover;
 }
 
-body.light-1{
+body.dark-1{
   background-image: url("../images/bg/dark-1.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -14,7 +14,15 @@ body.light-1{
   background-size: cover;
 }
 
-body.light-2{
+body.dark-2{
+  background-image: url("../images/bg/dark-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body.dark-3{
   background-image: url("../images/bg/dark_Background_Border.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -22,12 +30,12 @@ body.light-2{
   background-size: cover;
 }
 
-body.dark-1,.dark-0 p {
+body.dark-3,.dark-2,.dark-1,.dark-0 p {
   font-family: 'Over the Rainbow', cursive;
   font-size: 22px;
 }
 
-body.dark-1,.dark-0 span.firstLetter {
+body.dark-3,.dark-2,.dark-1,.dark-0 span.firstLetter {
   font-size: 50px;
   background-color: #7c6448;
   padding-left: 4px;
@@ -36,14 +44,25 @@ body.dark-1,.dark-0 span.firstLetter {
   background-color: #922c2c;
 }
 
-body.dark-1,.dark-0 span.human-speak {
+body.dark-3,.dark-2,.dark-1,.dark-0 span.human-speak {
   font-family: 'Princess Sofia', cursive;
   font-style: italic;
   font-weight: bold;
 }
 
-body.dark-1,.dark-0  span.goblin-speak {
+body.dark-3,.dark-2,.dark-1,.dark-0  span.goblin-speak {
   font-family: 'Griffy', cursive;
   font-style: italic;
   font-weight: bold;
+}
+
+body.dark-3,.dark-2,.dark-1,.dark-0 .ending p {
+	font-size: 20px;
+	margin-right: 41rem;
+	margin-left: 38rem;
+}
+
+body.dark-3,.dark-2,.dark-1,.dark-0,.endHeading{
+	font-size: 80px;
+	margin-top: 100px;
 }

@@ -15,6 +15,14 @@ body.light-1{
 }
 
 body.light-2{
+  background-image: url("../images/bg/light-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body.light-3{
   background-image: url("../images/bg/light_Background_Border.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -22,12 +30,12 @@ body.light-2{
   background-size: cover;
 }
 
-body.light-1,.light-0 p {
+body.light-3,.light-2,.light-1,.light-0 p {
   font-family: 'Fondamento', cursive;
   font-size: 22px;
 }
 
-body.light-1,.light-0 span.firstLetter {
+body.light-3,.light-2,.light-1,.light-0 span.firstLetter {
   font-size: 50px;
   background-color: gold;
   padding-left: 4px;
@@ -35,14 +43,28 @@ body.light-1,.light-0 span.firstLetter {
   font-family: 'UnifrakturMaguntia', cursive;
 }
 
-body.light-1,.light-0 span.human-speak {
+body.light-3,.light-2,.light-1,.light-0 span.human-speak {
   font-family: 'Princess Sofia', cursive;
   font-style: italic;
   font-weight: bold;
 }
 
-body.light-1,.light-0 span.goblin-speak {
+body.light-3,.light-2,.light-1,.light-0 span.goblin-speak {
   font-family: 'Griffy', cursive;
   font-style: italic;
   font-weight: bold;
+}
+
+body.light-3 .ending p,
+body.light-2 .ending p,
+body.light-1 .ending p,
+body.light-0 .ending p {
+	font-size: 20px;
+	margin-right: 41rem;
+	margin-left: 38rem;
+}
+
+body.light-3,.light-2,.light-1,.light-0,.endHeading{
+	font-size: 80px;
+	margin-top: 100px;
 }

@@ -170,7 +170,7 @@ setMoral(moralCount);
     $(".right9").click(function(){
       moralCount = parseInt($(this).attr("moral"));
       setMoral(moralCount);
-      
+
       $(".ninthPage").addClass("hide");
       $(".thirtyFourPage").removeClass("hide");
     });
@@ -232,6 +232,7 @@ setMoral(moralCount);
 
     $(".loop").click(function(){
       moralCount = parseInt($(this).attr("moral"));
+      moral = 0;
       setMoral(moralCount);
       $(".thirtyPage").addClass("hide");
       $(".firstPage").removeClass("hide");
