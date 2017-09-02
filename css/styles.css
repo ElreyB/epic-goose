@@ -10,14 +10,6 @@
   font-weight: bold;
 }
 
-body.neutral {
-	background-image: url("../images/bg/neutral_bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
 body {
   background-image: url("../images/primary/coverbg.jpg");
   background-repeat: no-repeat;

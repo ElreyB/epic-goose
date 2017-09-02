@@ -10,18 +10,16 @@ function User (name1, name2, fruit, hair) {
 }
 
 
-function setMood(mood){
-  $("body").removeClass("dark-1 dark-2 dark-3 light-1 light-2 light-3 light dark").addClass(mood);
-}
+// function setMood(mood){
+//   $("body").removeClass("dark-1 dark-2 dark-3 light-1 light-2 light-3 light dark").addClass(mood);
+// }
 // function to count/add the moral value to the body
 var moralCount = 0;
 var moral = 0;
 function setMoral(diff){
   moral += diff
-  $("body").removeClass("dark-1 dark-2 dark-3 light-1 light-2 light-3 light dark");
-  if (moral === 0){
-    $("body").addClass("neutral");
-  }else if (moral > 0){
+  $("body").removeClass("dark-1 dark-2 dark-3 light-1 light-2 light-3 light-0 dark-0");
+  if (moral >= 0){
     $("body").addClass(`light-${moral}`);
   } else if(moral < 0){
     $("body").addClass(`dark${moral}`);
@@ -66,7 +64,8 @@ $(document).ready(function(){
     $("button#open-book").click(function(){
       moralCount = parseInt($(this).attr("moral"));
       setMoral(moralCount);
-      // setMood("light");
+      // moralCount = parseInt($(this).attr("moral"));
+setMoral(moralCount);
       $(".cover-page").addClass("hide");
       $(".firstPage").removeClass("hide");
     });
@@ -112,13 +111,15 @@ $(document).ready(function(){
     });
 
     $(".turn-page2").click(function(){
-      setMood("light");
+      moralCount = parseInt($(this).attr("moral"));
+      setMoral(moralCount);
       $(".fourthPage").addClass("hide");
       $(".fifthPage").removeClass("hide");
     });
 
     $(".turn-page3").click(function(){
-      setMood("light");
+      moralCount = parseInt($(this).attr("moral"));
+      setMoral(moralCount);
       $(".fifthPage").addClass("hide");
       $(".sixthPage").removeClass("hide");
     });
@@ -130,25 +131,29 @@ $(document).ready(function(){
     });
 
     $(".turn-page5").click(function(){
-      setMood("light");
+      moralCount = parseInt($(this).attr("moral"));
+      setMoral(moralCount);
       $(".seventhPage").addClass("hide");
       $(".eigthPage").removeClass("hide");
     });
 
     $(".turn-page6").click(function(){
-      setMood("light");
+      moralCount = parseInt($(this).attr("moral"));
+      setMoral(moralCount);
       $(".eigthPage").addClass("hide");
       $(".ninthPage").removeClass("hide");
     });
 
     $(".turn-page7").click(function(){
-      setMood("light");
+      moralCount = parseInt($(this).attr("moral"));
+      setMoral(moralCount);
       $(".tenPage").addClass("hide");
       $(".elevenPage").removeClass("hide");
     });
 
     $(".turn-page8").click(function(){
-      setMood("light");
+      moralCount = parseInt($(this).attr("moral"));
+      setMoral(moralCount);
       $(".elevenPage").addClass("hide");
       $(".twelvePage").removeClass("hide");
     });
@@ -224,7 +229,8 @@ $(document).ready(function(){
     });
 
     $(".loop").click(function(){
-      setMood("light");
+      moralCount = parseInt($(this).attr("moral"));
+      setMoral(moralCount);
       $(".thirtyPage").addClass("hide");
       $(".firstPage").removeClass("hide");
     });

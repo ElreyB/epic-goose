@@ -1,4 +1,12 @@
-body.dark-1,.dark {
+body.dark-0 {
+	background-image: url("../images/bg/neutral_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body.dark-1 {
   background-image: url("../images/bg/dark_Background_Border.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -6,12 +14,12 @@ body.dark-1,.dark {
   background-size: cover;
 }
 
-body.dark-1,.dark p {
+body.dark-1,.dark-0 p {
   font-family: 'Over the Rainbow', cursive;
   font-size: 22px;
 }
 
-body.dark-1,.dark span.firstLetter {
+body.dark-1,.dark-0 span.firstLetter {
   font-size: 50px;
   background-color: #7c6448;
   padding-left: 4px;
@@ -20,13 +28,13 @@ body.dark-1,.dark span.firstLetter {
   background-color: #922c2c;
 }
 
-body.dark-1,.dark span.human-speak {
+body.dark-1,.dark-0 span.human-speak {
   font-family: 'Princess Sofia', cursive;
   font-style: italic;
   font-weight: bold;
 }
 
-body.dark-1,.dark  span.goblin-speak {
+body.dark-1,.dark-0  span.goblin-speak {
   font-family: 'Griffy', cursive;
   font-style: italic;
   font-weight: bold;
