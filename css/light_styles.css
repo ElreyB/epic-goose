@@ -1,16 +1,16 @@
-body.light {
-  background-image: url("../images/primary/light_Background_Border.jpg");
+body.light-1,.light {
+  background-image: url("../images/bg/light_Background_Border.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
 }
-body.light p {
+body.light-1,.light p {
   font-family: 'Fondamento', cursive;
   font-size: 22px;
 }
 
-body.light span.firstLetter {
+body.light-1,.light span.firstLetter {
   font-size: 50px;
   background-color: gold;
   padding-left: 4px;
@@ -18,13 +18,13 @@ body.light span.firstLetter {
   font-family: 'UnifrakturMaguntia', cursive;
 }
 
-body.light span.human-speak {
+body.light-1,.light span.human-speak {
   font-family: 'Princess Sofia', cursive;
   font-style: italic;
   font-weight: bold;
 }
 
-body.light span.goblin-speak {
+body.light-1,.light span.goblin-speak {
   font-family: 'Griffy', cursive;
   font-style: italic;
   font-weight: bold;

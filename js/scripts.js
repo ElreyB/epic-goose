@@ -11,19 +11,23 @@ function User (name1, name2, fruit, hair) {
 
 
 function setMood(mood){
-  $("body").removeClass("dark light").addClass(mood);
+  $("body").removeClass("dark-1 dark-2 dark-3 light-1 light-2 light-3 light dark").addClass(mood);
 }
 // function to count/add the moral value to the body
-// var moral = 0;
-// function setMoral(diff){
-//   moral += diff
-//   $("body").removeClass("dark-1 dark-2 dark-3 light-1 light-2 light-3");
-//   if (moral > 0){
-//     $("body").addClass(`light-${moral}`);
-//   } else if(moral < 0){
-//     $("body").addClass(`dark${moral}`);
-//   }
-// }
+var moralCount = 0;
+var moral = 0;
+function setMoral(diff){
+  moral += diff
+  $("body").removeClass("dark-1 dark-2 dark-3 light-1 light-2 light-3 light dark");
+  if (moral === 0){
+    $("body").addClass("neutral");
+  }else if (moral > 0){
+    $("body").addClass(`light-${moral}`);
+  } else if(moral < 0){
+    $("body").addClass(`dark${moral}`);
+  }
+}
+
 
 
 // User Interface Logic
@@ -60,37 +64,49 @@ $(document).ready(function(){
 
 
     $("button#open-book").click(function(){
-      setMood("light");
+      moralCount = parseInt($(this).attr("moral"));
+      setMoral(moralCount);
+      // setMood("light");
       $(".cover-page").addClass("hide");
       $(".firstPage").removeClass("hide");
     });
 
     $(".turn-page").click(function(){
-      setMood("light");
+      moralCount = parseInt($(this).attr("moral"));
+      setMoral(moralCount);
+      // setMood("light");
      $(".firstPage").addClass("hide");
      $(".secondPage").removeClass("hide");
     });
 
     $(".left2").click(function() {
-      setMood("dark");
+      moralCount = parseInt($(this).attr("moral"));
+      setMoral(moralCount);
+      // setMood("dark");
       $(".secondPage").addClass("hide");
       $(".thirdPage").removeClass("hide");
     });
 
     $(".right2").click(function() {
-      setMood("light");
+      moralCount = parseInt($(this).attr("moral"));
+      setMoral(moralCount);
+      // setMood("light");
       $(".secondPage").addClass("hide");
       $(".thirtyPage").removeClass("hide");
     });
 
     $(".left3").click(function(){
-      setMood("dark");
+      moralCount = parseInt($(this).attr("moral"));
+      setMoral(moralCount);
+      // setMood("dark");
       $(".thirdPage").addClass("hide");
       $(".fourthPage").removeClass("hide");
     });
 
     $(".right3").click(function(){
-      setMood("light");
+      moralCount = parseInt($(this).attr("moral"));
+      setMoral(moralCount);
+      // setMood("light");
       $(".thirdPage").addClass("hide");
       $(".thirtyOnePage").removeClass("hide");
     });
@@ -138,37 +154,49 @@ $(document).ready(function(){
     });
 
     $(".left9").click(function(){
-      setMood("light");
+      moralCount = parseInt($(this).attr("moral"));
+      setMoral(moralCount);
+      // setMood("light");
       $(".ninthPage").addClass("hide");
       $(".tenPage").removeClass("hide");
     });
 
     $(".right9").click(function(){
-      setMood("dark");
+      moralCount = parseInt($(this).attr("moral"));
+      setMoral(moralCount);
+      // setMood("dark");
       $(".ninthPage").addClass("hide");
       $(".thirtyFourPage").removeClass("hide");
     });
 
     $(".left31").click(function(){
-      setMood("light");
+      moralCount = parseInt($(this).attr("moral"));
+      setMoral(moralCount);
+      // setMood("light");
       $(".thirtyOnePage").addClass("hide");
       $(".thirtyThreePage").removeClass("hide");
     });
 
     $(".right31").click(function(){
-      setMood("dark");
+      moralCount = parseInt($(this).attr("moral"));
+      setMoral(moralCount);
+      // setMood("dark");
       $(".thirtyOnePage").addClass("hide");
       $(".thirtyTwoPage").removeClass("hide");
     });
 
     $(".left32").click(function(){
-      setMood("light");
+      moralCount = parseInt($(this).attr("moral"));
+      setMoral(moralCount);
+      // setMood("light");
       $(".thirtyTwoPage").addClass("hide");
       $(".fifthPage").removeClass("hide");
     });
 
     $(".right32").click(function(){
-      setMood("dark");
+      moralCount = parseInt($(this).attr("moral"));
+      setMoral(moralCount);
+      // setMood("dark");
       $(".thirtyTwoPage").addClass("hide");
       $(".thirteenPage").removeClass("hide");
     });
@@ -180,13 +208,17 @@ $(document).ready(function(){
     });
 
     $(".left34").click(function(){
-      setMood("light");
+      moralCount = parseInt($(this).attr("moral"));
+      setMoral(moralCount);
+      // setMood("light");
       $(".thirtyFourPage").addClass("hide");
       $(".fourteenPage").removeClass("hide");
     });
 
     $(".right34").click(function(){
-      setMood("dark");
+      moralCount = parseInt($(this).attr("moral"));
+      setMoral(moralCount);
+      // setMood("dark");
       $(".thirtyFourPage").addClass("hide");
       $(".fifteenPage").removeClass("hide");
     });
