@@ -1,6 +1,5 @@
 // Business Logic
 
-
 function User (name1, name2, fruit, hair) {
   this.name1 = name1;
   this.name2 = name2;
@@ -9,11 +8,7 @@ function User (name1, name2, fruit, hair) {
   this.animals = [];
 }
 
-
-// function setMood(mood){
-//   $("body").removeClass("dark-1 dark-2 dark-3 light-1 light-2 light-3 light dark").addClass(mood);
-// }
-// function to count/add the moral value to the body
+// function to count/add the moral value of the path choosen
 var moralCount = 0;
 var moral = 0;
 function setMoral(diff){
@@ -26,13 +21,12 @@ function setMoral(diff){
   }
 }
 
-
-
 // User Interface Logic
 $(document).ready(function(){
+  // Using jquery to hide pages to be able to fade in/out text and images
   $(".secondPage, .thirdPage, .thirtyPage, .fourthPage, .fifthPage, .sixthPage, .seventhPage, .eigthPage, .ninthPage, .tenPage, .elevenPage, .twelvePage, .thirteenPage, .fourteenPage, .fifteenPage, .thirtyOnePage, .thirtyThreePage, .thirtyTwoPage, .thirtyFourPage, .thirtyFivePage").hide();
   $("body").removeClass("hide");
-  
+
   $("button#begin").click(function(e){
     e.preventDefault();
     $(".instructions").addClass("hide");
@@ -72,8 +66,10 @@ $(document).ready(function(){
     });
 
     $(".turn-page").click(function(){
+      // will set the background based on moral count
       moralCount = parseInt($(this).attr("moral"));
       setMoral(moralCount);
+      // fade out/in text and photos for 1000 millisecond
      $(".firstPage").fadeOut(1000);
      $(".secondPage").fadeIn(1000);
     });
