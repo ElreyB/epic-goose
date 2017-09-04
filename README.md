@@ -12,7 +12,7 @@ _This app will change the "Goblin Market story based on the choices you make whe
 
 * _Clone this repository_
 * _In your terminal type "git clone (repository url)_
-* _Click on the index.html file to open in your updated browser of choice or click here_
+* _Click on the index.html file to open in your updated browser of choice or click here https://elreyb.github.io/epic-goose/_
 
 ## Specifications
 
